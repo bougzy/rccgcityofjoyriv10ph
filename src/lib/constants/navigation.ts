@@ -4,6 +4,7 @@ import {
   Megaphone, BarChart3, Network, Settings, UserCog, UsersRound,
   CalendarDays, FileText, TrendingUp, UserPlus, DollarSign,
   HandHeart, Sparkles, BookMarked, HandHelping, Activity,
+  ShoppingBag, Store,
 } from 'lucide-react';
 import type { UserRole } from '@/types';
 
@@ -28,6 +29,7 @@ export const publicNavLinks = [
     ],
   },
   { href: '/giving', label: 'Giving' },
+  { href: '/marketplace', label: 'Marketplace' },
 ];
 
 export interface AdminNavLink {
@@ -59,4 +61,6 @@ export const adminNavLinks: AdminNavLink[] = [
   { href: '/admin/hierarchy', label: 'Hierarchy', icon: Network, roles: ['super-admin'] },
   { href: '/admin/users', label: 'Users', icon: UserCog, roles: ['super-admin'] },
   { href: '/admin/settings', label: 'Settings', icon: Settings },
+  { href: '/admin/marketplace', label: 'Marketplace', icon: ShoppingBag, roles: ['super-admin'] },
+  { href: '/admin/my-store', label: 'My Store', icon: Store },
 ];
